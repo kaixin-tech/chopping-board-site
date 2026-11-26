@@ -147,11 +147,11 @@ a{text-decoration:none;color:inherit}
   font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase}
 
 /* ---------- QUOTE ---------- */
-.quote{background:var(--ink);color:var(--cream);padding:100px 10%;text-align:center}
-.quote .mark{font-size:80px;color:var(--terra);line-height:.5;font-weight:800}
+.quote{background:var(--sand);color:var(--ink);padding:100px 10%;text-align:center}
+.quote .mark{font-size:80px;color:var(--terra-d);line-height:.5;font-weight:800}
 .quote q{display:block;font-size:clamp(26px,3.4vw,46px);font-weight:700;
   line-height:1.35;letter-spacing:.5px;max-width:920px;margin:26px auto}
-.quote .by{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#C9B7A2;margin-top:26px}
+.quote .by{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--ink2);margin-top:26px}
 
 /* ---------- CUSTOM ---------- */
 .custom{padding:110px 8%;background:linear-gradient(180deg,var(--cream) 0%,var(--cream2) 100%);text-align:center}
@@ -171,19 +171,19 @@ a{text-decoration:none;color:inherit}
 .finalcta .btn.light{color:var(--terra-d)}
 
 /* ---------- FOOTER ---------- */
-footer{background:var(--ink);color:#B8A894;padding:56px 8% 30px}
+footer{background:var(--sand);color:var(--ink2);padding:56px 8% 30px}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:44px;margin-bottom:36px}
 .foot-brand img{width:44px;margin-bottom:16px}
 .foot-brand p{font-size:13px;line-height:1.8}
-footer h4{color:#F4E6D4;font-size:12px;font-weight:700;letter-spacing:2px;
+footer h4{color:var(--ink);font-size:12px;font-weight:700;letter-spacing:2px;
   text-transform:uppercase;margin-bottom:16px}
-footer h4~a,footer .info-item{display:block;font-size:13px;margin-bottom:10px;color:#B8A894}
-footer a:hover{color:var(--terra-soft)}
+footer h4~a,footer .info-item{display:block;font-size:13px;margin-bottom:10px;color:var(--ink2)}
+footer a:hover{color:var(--terra-d)}
 .info-item{display:flex!important;gap:10px;line-height:1.6}
 .info-item .ic{font-size:15px}
-.info-item b{display:block;color:#E5D6C4;font-size:12px}
+.info-item b{display:block;color:var(--ink);font-size:12px}
 .info-item span:not(.ic){font-size:12px}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;
+.foot-bottom{border-top:1px solid rgba(59,47,35,.15);padding-top:22px;
   display:flex;justify-content:space-between;gap:16px;font-size:11px;letter-spacing:1px;flex-wrap:wrap}
 
 /* ---------- BREADCRUMB ---------- */
