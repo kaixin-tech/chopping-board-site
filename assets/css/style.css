@@ -103,13 +103,16 @@ a{text-decoration:none;color:inherit}
 .promise .lbl{font-size:12px;font-weight:600;letter-spacing:1.6px;
   text-transform:uppercase;margin-top:10px;opacity:.94}
 
-/* ---------- COLOURS FULL-BLEED ---------- */
-.colours{position:relative;overflow:hidden;background:var(--sand)}
-.colours>img{width:100%;max-height:720px;object-fit:cover}
-.colours .cap{position:absolute;left:8%;top:50%;transform:translateY(-50%);max-width:440px}
-.colours .cap h2{font-size:clamp(40px,4.8vw,66px);line-height:1.05;
-  font-weight:800;color:var(--ink);text-shadow:0 2px 0 rgba(255,255,255,.45)}
-.colours .cap p{font-size:16px;line-height:1.7;color:var(--ink2);margin-top:18px;max-width:360px}
+/* ---------- COLOURS SPLIT ---------- */
+.colours{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:70px;
+  padding:110px 8%;background:linear-gradient(180deg,var(--cream) 0%,var(--cream2) 100%)}
+.colours .cap{max-width:520px}
+.colours .cap h2{font-size:clamp(40px,4.6vw,62px);line-height:1.08;
+  font-weight:800;color:var(--ink);margin-top:16px}
+.colours .cap p{font-size:16px;line-height:1.75;color:var(--ink2);margin-top:18px;max-width:430px}
+.colours .pic{margin:0}
+.colours .pic img{width:100%;height:auto;display:block;border-radius:24px;
+  box-shadow:0 26px 60px rgba(90,60,30,.18)}
 
 /* ---------- FEATURE BAND ---------- */
 .band{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;min-height:560px}
@@ -277,7 +280,8 @@ footer a:hover{color:var(--terra-soft)}
   .promise{grid-template-columns:1fr 1fr;gap:28px}
   .custom-grid{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
-  .colours .cap{position:static;transform:none;padding:48px 8% 8px}
+  .colours{grid-template-columns:1fr;gap:36px;padding:70px 8%}
+  .colours .cap{max-width:none}
   .detail{gap:32px}
   .form-card .row2{grid-template-columns:1fr}
 }
